@@ -1,8 +1,11 @@
 :root {
   --background-gradient-light: linear-gradient(
     90deg,
-    rgba(57, 131, 255, 1) 0%,
-    rgba(255, 137, 119, 1) 100%
+    rgba(2, 0, 40, 1) 0%,
+    rgba(135, 56, 95, 1) 18%,
+    rgba(222, 93, 131, 1) 48%,
+    rgba(115, 120, 191, 1) 87%,
+    rgba(0, 149, 255, 1) 100%
   );
   --background-gradient-dark: linear-gradient(
     90deg,
@@ -79,14 +82,11 @@ section:has(+ section) > div > div > p {
   overflow: hidden;
 }
 
-/* back side */
+/* back side of the cards */
 section:has(+ section) > div > div > p:has(+ p) {
   background: var(--back-of-cards-light);
   transform: rotateY(180deg);
   color: var(--front-of-cards-light);
-}
-
-section:has(+ section) > div > div > p:has(+ p) {
 }
 
 /* h3 */
@@ -147,6 +147,26 @@ body > section:nth-child(2) > div > div > input:focus {
   color: var(--text-color-light);
 }
 
+/* dark mode light mode article */
+
+article {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+article > label {
+  margin-bottom: 10px;
+}
+
+/* article for the darkmode*/
+html:has([type="checkbox"]:checked) {
+  background-color: black;
+}
+
+/* underneath the 3rd section */
 body > h2 {
   margin: 30px 0 10px 0;
   justify-content: center;
