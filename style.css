@@ -1,11 +1,8 @@
 :root {
   --background-gradient-light: linear-gradient(
     90deg,
-    rgba(2, 0, 40, 1) 0%,
-    rgba(135, 56, 95, 1) 18%,
-    rgba(222, 93, 131, 1) 48%,
-    rgba(115, 120, 191, 1) 87%,
-    rgba(0, 149, 255, 1) 100%
+    rgba(57, 131, 255, 1) 0%,
+    rgba(255, 137, 119, 1) 100%
   );
   --background-gradient-dark: linear-gradient(
     90deg,
